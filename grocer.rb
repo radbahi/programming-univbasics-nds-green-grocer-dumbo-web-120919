@@ -44,7 +44,7 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   i = 0 
   while i < coupons.length do 
-    
+    grocerItem = find_item_by_name_in_collection
     counter += 1
 end
 
