@@ -63,7 +63,7 @@ def apply_coupons(cart, coupons)
       grocerItem[:count] -= coupons[i][:num]
       end
     end
-    counter += 1
+    i += 1
 end
 cart 
 end
