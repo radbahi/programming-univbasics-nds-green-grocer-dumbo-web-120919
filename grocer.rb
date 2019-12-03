@@ -21,6 +21,10 @@ def consolidate_cart(cart)
   i = 0 
   while i < cart.length do 
     grocerItem = find_item_by_name_in_collection(cart[i][:item], grocerCart)
+    if grocerItem
+      grocerItem[:count] += 1 
+    else 
+      grocerItem[i] << grocerCart
   end
   i += 1 
 end
