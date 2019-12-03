@@ -52,7 +52,7 @@ def apply_coupons(cart, coupons)
         cartCoupon[:count] += coupons[i][:num]
         grocerItem[:count] -= coupons[i][:num]
       else 
-        
+        cartCoupon
     counter += 1
 end
 
