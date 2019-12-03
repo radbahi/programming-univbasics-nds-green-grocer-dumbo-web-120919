@@ -7,8 +7,6 @@ def find_item_by_name_in_collection(name, collection)
   while i < collection.length do 
    if collection[i]
    i += 1
-  else
-    return nil
   end
 end
 
