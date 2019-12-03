@@ -50,6 +50,8 @@ def apply_coupons(cart, coupons)
     if grocerItem && grocerItem[:count] >= coupons[i][:num]
       if cartCoupon
         cartCoupon[:count] += coupons[i][:num]
+        grocerItem[:count] -= coupons[i][:num]
+      else 
         
     counter += 1
 end
