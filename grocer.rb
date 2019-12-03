@@ -45,6 +45,8 @@ def apply_coupons(cart, coupons)
   i = 0 
   while i < coupons.length do 
     grocerItem = find_item_by_name_in_collection(coupons[i][:item], cart)
+    couponItem = "#{coupons[i][:item]} W/COUPON"
+    cartCoupon = find_item_by_name_in_collection(couponItem, )
     counter += 1
 end
 
